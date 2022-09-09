@@ -17,8 +17,25 @@
     <h1>Iniciando os estudos de DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em min</div>
+    <div id="msg">Clique em min</div>
     <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        
+        /* //para selecionar qual o paragrafo é nescessario usar [0] para primeiro [1] pra segundo e assim sucessivamente
+
+        corpo.style.backgroundColor = '' //posso mudar a cor dos elementos 
+
+        window.document.write('está escrito assim : ' + p1.innerText)//seleciona o texto do paragrafo e recoloca ele na tela 
+
+        p1.style.color = 'blue' //posso mudar a cor dos elementos
+
+        var d = window.document.getElementById('msg') 
+        d.style.background = 'green'//posso mudar a cor dos elementos
+        d.innerText = 'estou aguardando'//posso mudar o texto dos elementos
+        */
+       var d = window.document.querySelector('div#msg')
+       d.style.color = 'blue' //usando seletor pela dom para fazer mudanças via javaScript
 
     </script>
 </body>
