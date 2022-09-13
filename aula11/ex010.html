@@ -8,9 +8,10 @@
 </head>
 <body>
     <h1>Sistemas de infrações</h1>
-     velocidade de carro:
-    <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <label for="txtvel">Velocidade do carro:</label>
+    <input type="number" name="txtvel" id="txtvel">
+     <label for="velo">Km/h</label>
+    <input type="button" value="Verificar" id="velo" onclick="calcular()">
     <div id="res">
 
     </div>
@@ -22,10 +23,10 @@
            var vel = Number(txtv.value)
            res.innerHTML = `<p>sua velocidade atual é de ${vel} km/h`
             if (vel > 60) {
-                res.innerHTML  += `<p>Voce será multado por excesso de velocidade `
+                res.innerHTML  += `<p>Voce será multado por excesso de velocidade !`
 
             }
-           res.innerHTML += `<p>Dirija sempre usando o cinto de segurança</p>`
+           res.innerHTML += `<p>Dirija sempre usando o cinto de segurança.</p>`
         } 
     </script>
 
