@@ -9,6 +9,7 @@ header {
     color: white;
     text-align: center;
 
+    text-align: center;
 }
 section {
     background-color: white;
@@ -18,6 +19,10 @@ section {
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 
+}
+div {
+    text-align: center;
+    padding: 8px;
 }
 footer {
     color: white;
