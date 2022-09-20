@@ -1,9 +1,9 @@
 
 
-var c = 1 //estrutura de repetição while
+var c = 1 //estrutura de repetição do while
 do {
     console.log(`Passo ${c}`)
-    c = c + 1
+    c = c + 1 //pode usar a abreviação c++ ou c += 1
 } while (c <= 10) 
 
 
